@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<style>
+
+body{
+    background:#f4f4f4;
+    font-family:Arial;
+}
+
+.box{
+
+    width:500px;
+
+    background:white;
+
+    padding:30px;
+
+    margin:50px auto;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+}
+
+button{
+
+    padding:12px 25px;
+
+    background:#001f3f;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003366;
+}
+
+a{
+    text-decoration:none;
+    color:red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Update Website</h2>
+
+<form method="POST">
+
+<label>Title</label>
+
+<textarea name="title" rows="4">
+{{ content[1] }}
+</textarea>
+
+<label>Description</label>
+
+<textarea name="desc" rows="5">
+{{ content[2] }}
+</textarea>
+
+<button type="submit">
+Update Website
+</button>
+
+</form>
+
+<br>
+
+<a href="/logout">
+Logout
+</a>
+
+</div>
+
+</body>
+</html>
